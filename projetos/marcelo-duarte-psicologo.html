@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marcelo Duarte — Psicólogo Clínico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-serif-editorial {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .bg-slate-blue {
+      background-color: #4f647c;
+    }
+    .hover\:bg-slate-blue-dark:hover {
+      background-color: #3f5268;
+    }
+    .text-slate-blue {
+      color: #4f647c;
+    }
+    .bg-outer-navy {
+      background-color: #263952;
+    }
+    .bg-canvas-light {
+      background-color: #ededec;
+    }
+  </style>
+</head>
+<body class="antialiased bg-outer-navy text-slate-800 py-8 px-3 sm:px-6">
+
+  <!-- MAIN EDITORIAL PAGE CONTAINER -->
+  <div class="max-w-5xl mx-auto bg-canvas-light rounded-2xl shadow-2xl overflow-hidden p-4 sm:p-6 space-y-5">
+
+    <!-- TOP NAVIGATION -->
+    <header class="flex items-center justify-between px-3 py-2 text-[11px] text-slate-600">
+      <a href="#" class="font-serif-editorial italic text-sm text-slate-800">Marcelo Duarte</a>
+
+      <nav class="hidden sm:flex items-center gap-7">
+        <a href="#abordagem" class="hover:text-slate-blue transition">Minha abordagem</a>
+        <a href="#trajetoria" class="hover:text-slate-blue transition">Trajetória</a>
+        <a href="#modalidades" class="hover:text-slate-blue transition">Sessões</a>
+      </nav>
+
+      <a href="#contato" class="border border-slate-300 bg-white/80 hover:bg-white text-slate-700 px-3.5 py-1.5 rounded-full text-[10px] font-medium transition">
+        Agendar sessão
+      </a>
+    </header>
+
+    <!-- HERO SECTION (2-COLUMN SPLIT CARDS) -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Left Editorial White Card -->
+      <div class="bg-[#f8f8f7] rounded-2xl p-8 sm:p-12 flex flex-col items-center justify-center text-center border border-white">
+        <span class="text-[9px] uppercase tracking-[0.22em] text-slate-400 mb-3">
+          [ Psicólogo Clínico ]
+        </span>
+
+        <h1 class="font-serif-editorial text-4xl sm:text-5xl text-slate-800 font-normal leading-[1.05] tracking-wide mb-6">
+          MARCELO<br>DUARTE
+        </h1>
+
+        <!-- Small Center Square Photo -->
+        <div class="w-16 h-20 rounded-md overflow-hidden shadow-sm mb-6 bg-slate-200">
+          <img 
+            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=300&q=80" 
+            alt="Horizonte calmo" 
+            class="w-full h-full object-cover grayscale"
+          >
+        </div>
+
+        <p class="text-[11px] text-slate-500 max-w-[230px] leading-relaxed mb-6">
+          Um espaço de escuta atenta e acolhimento para cuidar da sua saúde emocional com leveza.
+        </p>
+
+        <a href="#contato" class="text-[11px] font-medium text-slate-700 border-b border-slate-400 pb-0.5 hover:text-slate-blue hover:border-slate-blue transition">
+          Agendar uma conversa
+        </a>
+      </div>
+
+      <!-- Right Portrait Photo Card -->
+      <div class="rounded-2xl overflow-hidden bg-[#1e2326] min-h-[380px] sm:min-h-[440px]">
+        <img 
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80" 
+          alt="Marcelo Duarte - Psicólogo" 
+          class="w-full h-full object-cover object-center"
+        >
+      </div>
+    </section>
+
+    <!-- VALORES HEADER BANNER -->
+    <section id="abordagem" class="bg-slate-blue text-white rounded-2xl py-9 px-6 text-center">
+      <span class="text-[9px] uppercase tracking-[0.25em] text-white/75 block mb-2">
+        [ Como eu atuo ]
+      </span>
+      <h2 class="font-serif-editorial text-2xl sm:text-3xl font-normal tracking-wide leading-snug">
+        NO MEU TRABALHO, ME APOIO<br>
+        <span class="italic font-normal text-white/95">em 3 valores essenciais:</span>
+      </h2>
+    </section>
+
+    <!-- BEACH FULL-BLEED SECTION WITH 3 FLOATING VALUE CARDS -->
+    <section class="relative rounded-2xl overflow-hidden min-h-[480px] sm:min-h-[520px] flex items-center">
+      <!-- B&W Beach Background -->
+      <img 
+        src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1400&q=80" 
+        alt="Caminhada na praia" 
+        class="absolute inset-0 w-full h-full object-cover grayscale contrast-105 opacity-85"
+      >
+      <div class="absolute inset-0 bg-white/15"></div>
+
+      <!-- Floating Value Cards Layout -->
+      <div class="relative z-10 w-full max-w-4xl mx-auto px-5 py-10 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1: Top Left -->
+        <div class="bg-slate-blue/95 backdrop-blur-xs text-white p-6 rounded-xl shadow-lg max-w-xs">
+          <h3 class="font-serif-editorial italic text-xl mb-2">Acolhimento</h3>
+          <p class="text-[11px] text-white/90 leading-relaxed font-light">
+            Um ambiente seguro, livre de julgamentos, onde você pode expressar suas angústias, dúvidas e histórias no seu próprio tempo.
+          </p>
+        </div>
+
+        <!-- Card 2: Middle Right -->
+        <div class="bg-slate-blue/95 backdrop-blur-xs text-white p-6 rounded-xl shadow-lg max-w-xs md:ml-auto md:mt-16">
+          <h3 class="font-serif-editorial italic text-xl mb-2">Ética e confidencialidade</h3>
+          <p class="text-[11px] text-white/90 leading-relaxed font-light">
+            Respeito absoluto ao sigilo profissional e à singularidade de cada trajetória, construindo uma relação terapêutica de confiança.
+          </p>
+        </div>
+
+        <!-- Card 3: Bottom Left -->
+        <div class="bg-slate-blue/95 backdrop-blur-xs text-white p-6 rounded-xl shadow-lg max-w-xs md:ml-12">
+          <h3 class="font-serif-editorial italic text-xl mb-2">Escuta ativa</h3>
+          <p class="text-[11px] text-white/90 leading-relaxed font-light">
+            Atenção genuína aos detalhes da sua fala e emoções para ajudar você a identificar padrões e encontrar novos caminhos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINHA TRAJETÓRIA SECTION (2-COLUMN) -->
+    <section id="trajetoria" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Left Portrait with Stats Overlay -->
+      <div class="relative rounded-2xl overflow-hidden bg-[#1e2326] min-h-[340px]">
+        <img 
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80" 
+          alt="Marcelo Duarte" 
+          class="w-full h-full object-cover object-top"
+        >
+        <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent"></div>
+
+        <!-- Bottom Overlay Metrics -->
+        <div class="absolute bottom-5 inset-x-6 flex items-end justify-center gap-10 text-white text-center">
+          <div>
+            <span class="font-serif-editorial text-2xl sm:text-3xl block leading-none">6 anos</span>
+            <span class="text-[9px] text-white/75 uppercase tracking-wider mt-1 block">de prática clínica</span>
+          </div>
+          <div class="h-8 w-px bg-white/25"></div>
+          <div>
+            <span class="font-serif-editorial text-2xl sm:text-3xl block leading-none">4 anos</span>
+            <span class="text-[9px] text-white/75 uppercase tracking-wider mt-1 block">atendimento online</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Trajectory White Card -->
+      <div class="bg-[#f8f8f7] rounded-2xl p-7 sm:p-9 flex flex-col justify-between border border-white">
+        <div class="text-center mb-6">
+          <h2 class="font-serif-editorial text-2xl sm:text-3xl text-slate-800 leading-tight">
+            MINHA TRAJETÓRIA<br>
+            <span class="italic text-slate-600 text-xl sm:text-2xl">na psicologia</span>
+          </h2>
+        </div>
+
+        <!-- Horizontal Cards Row -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+          <div class="bg-slate-blue text-white p-4 rounded-xl">
+            <span class="text-[10px] font-semibold text-white/75 block mb-1.5">2018 – 2022</span>
+            <p class="text-[10px] text-white/90 leading-relaxed font-light">
+              Graduação em Psicologia com ênfase em Clínica e Saúde Mental, além de estágios supervisionados em atendimento individual.
+            </p>
+          </div>
+          <div class="bg-slate-blue text-white p-4 rounded-xl">
+            <span class="text-[10px] font-semibold text-white/75 block mb-1.5">2022 – 2026</span>
+            <p class="text-[10px] text-white/90 leading-relaxed font-light">
+              Especialização em Psicoterapia Breve e atendimento clínico presencial e online para adultos e casais.
+            </p>
+          </div>
+        </div>
+
+        <a href="#contato" class="w-full bg-slate-blue hover:bg-slate-blue-dark text-white text-center text-[11px] font-medium py-3 rounded-lg transition">
+          Conhecer mais sobre mim
+        </a>
+      </div>
+    </section>
+
+    <!-- FORMAS DE TRABALHAR COMIGO -->
+    <section id="modalidades" class="py-8 px-2">
+      <div class="text-center mb-8">
+        <span class="text-[9px] uppercase tracking-[0.22em] text-slate-400 block mb-1.5">
+          [ Atendimentos ]
+        </span>
+        <h2 class="font-serif-editorial text-2xl sm:text-3xl text-slate-800">
+          FORMAS DE TRABALHAR COMIGO
+        </h2>
+      </div>
+
+      <!-- 3 Service Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+        <!-- Option 1 -->
+        <div class="bg-[#f8f8f7] rounded-xl p-6 text-center flex flex-col justify-between border border-white shadow-2xs">
+          <div>
+            <h3 class="font-serif-editorial italic text-lg text-slate-800 mb-3">Sessão individual</h3>
+            <p class="text-[11px] text-slate-500 leading-relaxed mb-5">
+              Encontro pontual para acolhimento de uma demanda específica, organização emocional ou primeiro contato com a terapia.
+            </p>
+          </div>
+          <div>
+            <span class="text-[10px] text-slate-400 block mb-4">[ 50 minutos ]</span>
+            <a href="#contato" class="block w-full bg-slate-blue hover:bg-slate-blue-dark text-white text-[11px] font-medium py-2.5 rounded-lg transition">
+              Agendar
+            </a>
+          </div>
+        </div>
+
+        <!-- Option 2 -->
+        <div class="bg-[#f8f8f7] rounded-xl p-6 text-center flex flex-col justify-between border border-white shadow-2xs">
+          <div>
+            <h3 class="font-serif-editorial italic text-lg text-slate-800 mb-3">Acompanhamento mensal</h3>
+            <p class="text-[11px] text-slate-500 leading-relaxed mb-5">
+              Processo psicoterapêutico contínuo com encontros semanais para aprofundamento, autoconhecimento e evolução constante.
+            </p>
+          </div>
+          <div>
+            <span class="text-[10px] text-slate-400 block mb-4">[ 4 sessões no mês ]</span>
+            <a href="#contato" class="block w-full bg-slate-blue hover:bg-slate-blue-dark text-white text-[11px] font-medium py-2.5 rounded-lg transition">
+              Agendar
+            </a>
+          </div>
+        </div>
+
+        <!-- Option 3 -->
+        <div class="bg-[#f8f8f7] rounded-xl p-6 text-center flex flex-col justify-between border border-white shadow-2xs">
+          <div>
+            <h3 class="font-serif-editorial italic text-lg text-slate-800 mb-3">Terapia de casal</h3>
+            <p class="text-[11px] text-slate-500 leading-relaxed mb-5">
+              Espaço mediado para melhorar a comunicação, resolver conflitos recorrentes e fortalecer o vínculo afetivo.
+            </p>
+          </div>
+          <div>
+            <span class="text-[10px] text-slate-400 block mb-4">[ 70 minutos ]</span>
+            <a href="#contato" class="block w-full bg-slate-blue hover:bg-slate-blue-dark text-white text-[11px] font-medium py-2.5 rounded-lg transition">
+              Agendar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-[10px] text-slate-500 max-w-md mx-auto leading-relaxed">
+        Todos os atendimentos podem ser realizados online (por videochamada) ou presencialmente mediante disponibilidade de agenda.
+      </p>
+    </section>
+
+    <!-- FULL-WIDTH QUOTE BANNER -->
+    <section class="relative rounded-2xl overflow-hidden h-56 sm:h-64 flex items-center justify-center text-center px-6">
+      <img 
+        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1400&q=80" 
+        alt="Paisagem serena" 
+        class="absolute inset-0 w-full h-full object-cover grayscale opacity-75"
+      >
+      <div class="absolute inset-0 bg-white/45 backdrop-blur-[1px]"></div>
+
+      <div class="relative z-10 max-w-lg mx-auto">
+        <div class="flex items-center justify-center gap-3 text-slate-700">
+          <span class="font-serif-editorial text-4xl font-light text-slate-500">{</span>
+          <p class="font-serif-editorial text-xl sm:text-2xl leading-snug text-slate-800">
+            MEU OBJETIVO É AJUDAR<br>
+            VOCÊ A SE COMPREENDER<br>
+            <span class="italic text-slate-700">e encontrar equilíbrio</span>
+          </p>
+          <span class="font-serif-editorial text-4xl font-light text-slate-500">}</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SPLIT SECTION -->
+    <section id="contato" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <!-- Left Landscape Photo -->
+      <div class="rounded-2xl overflow-hidden min-h-[300px]">
+        <img 
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" 
+          alt="Caminhando junto ao mar" 
+          class="w-full h-full object-cover grayscale"
+        >
+      </div>
+
+      <!-- Right Slate Blue Contact Card -->
+      <div class="bg-slate-blue text-white rounded-2xl p-8 sm:p-10 flex flex-col items-center justify-center text-center">
+        <span class="text-[9px] uppercase tracking-[0.22em] text-white/70 mb-2">
+          [ Contato ]
+        </span>
+        <h2 class="font-serif-editorial text-2xl sm:text-3xl font-normal leading-tight mb-5">
+          PODE ME ENVIAR<br>
+          SUA DÚVIDA<br>
+          <span class="italic text-white/95 text-xl sm:text-2xl">pelo canal que preferir</span>
+        </h2>
+
+        <!-- Small Avatar -->
+        <img 
+          src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80" 
+          alt="Marcelo Duarte" 
+          class="w-12 h-12 rounded-lg object-cover border border-white/30 mb-5"
+        >
+
+        <!-- 3 Contact Links -->
+        <div class="flex items-center justify-center gap-6 text-[11px] font-medium mb-6">
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" class="border-b border-white/50 pb-0.5 hover:border-white transition">
+            WhatsApp
+          </a>
+          <a href="#" class="border-b border-white/50 pb-0.5 hover:border-white transition">
+            Instagram
+          </a>
+          <a href="mailto:contato@marceloduarte.com.br" class="border-b border-white/50 pb-0.5 hover:border-white transition">
+            E-mail
+          </a>
+        </div>
+
+        <p class="text-[9px] text-white/65 max-w-[230px] leading-relaxed">
+          Respondo pessoalmente assim que possível entre os intervalos dos atendimentos.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="pt-4 pb-2 px-2 text-[10px] text-slate-500">
+      <div class="border-t border-slate-300/80 pt-4 text-center mb-3">
+        <p>Atendimento psicológico conforme o Código de Ética Profissional do Psicólogo • CRP 06/000000</p>
+      </div>
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-[9px] text-slate-400">
+        <span>Marcelo Duarte • Psicólogo</span>
+        <span>© 2026 Todos os direitos reservados</span>
+        <span>Design &amp; Conceito Editorial</span>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

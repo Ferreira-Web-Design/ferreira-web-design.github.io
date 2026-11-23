@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrtoViva — Ortodontia e Saúde Bucal</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .bg-forest {
+      background-color: #0f5132;
+    }
+    .bg-forest-deep {
+      background-color: #0b3b24;
+    }
+    .text-forest {
+      color: #0f5132;
+    }
+    .bg-mint-soft {
+      background-color: #e6f4ea;
+    }
+    .bg-sage-light {
+      background-color: #f3f7f4;
+    }
+    .bg-emerald-cta {
+      background-color: #16a34a;
+    }
+    .hover\:bg-emerald-cta-dark:hover {
+      background-color: #15803d;
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-white">
+
+  <!-- TOP NAVIGATION -->
+  <header class="relative bg-white overflow-hidden">
+    <nav class="relative z-20 max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-2">
+        <span class="w-7 h-7 rounded-lg bg-forest text-white flex items-center justify-center text-xs font-extrabold">
+          <i class="fa-solid fa-tooth"></i>
+        </span>
+        <span class="font-extrabold text-base tracking-tight text-forest">Orto<span class="text-emerald-600">Viva</span></span>
+      </a>
+
+      <!-- Links -->
+      <ul class="hidden md:flex items-center gap-7 text-xs font-semibold text-slate-600">
+        <li><a href="#aparelhos" class="hover:text-forest transition">Aparelhos</a></li>
+        <li><a href="#tratamentos" class="hover:text-forest transition">Tratamentos</a></li>
+        <li><a href="#convenios" class="hover:text-forest transition">Convênios</a></li>
+        <li><a href="#unidades" class="hover:text-forest transition">Unidades</a></li>
+        <li><a href="#sobre" class="hover:text-forest transition">Sobre nós</a></li>
+      </ul>
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-3">
+        <a href="#unidades" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-semibold text-slate-600 hover:text-forest transition">
+          <i class="fa-solid fa-location-dot text-emerald-600"></i>
+          <span>Unidades</span>
+        </a>
+        <a href="#agendar" class="bg-forest hover:bg-forest-deep text-white text-xs font-bold px-4 py-2.5 rounded-full transition">
+          Agendar avaliação
+        </a>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="relative max-w-6xl mx-auto px-6 pt-6 pb-16 grid grid-cols-1 lg:grid-cols-12 items-center gap-10">
+      <!-- Left Copy & Booking Widget -->
+      <div class="lg:col-span-6 z-10">
+        <span class="inline-flex items-center gap-1.5 bg-mint-soft text-forest text-[11px] font-bold px-3 py-1 rounded-full mb-4">
+          <i class="fa-solid fa-sparkles text-emerald-600"></i>
+          Ortodontia especializada
+        </span>
+
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 leading-[1.1] mb-4">
+          Seu sorriso alinhado com <span class="text-emerald-600">qualidade.</span>
+        </h1>
+
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed max-w-md mb-6">
+          Tratamentos ortodônticos modernos, acompanhamento próximo e especialistas prontos para transformar seu sorriso com segurança.
+        </p>
+
+        <a href="#agendar" class="inline-flex items-center gap-2 bg-emerald-cta hover:bg-emerald-cta-dark text-white font-bold text-xs px-5 py-3 rounded-full shadow-md transition mb-8">
+          <span>Agendar minha avaliação</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+
+        <!-- Floating Quick Booking Card -->
+        <div id="agendar" class="bg-white border border-slate-200/90 rounded-2xl p-4 shadow-xl max-w-md">
+          <div class="flex items-center gap-2 text-[11px] font-bold text-forest mb-3">
+            <span class="w-5 h-5 rounded-full bg-mint-soft text-emerald-600 flex items-center justify-center text-[10px]">
+              <i class="fa-solid fa-calendar-check"></i>
+            </span>
+            <span>Agende sua consulta rapidamente</span>
+          </div>
+          <form class="grid grid-cols-1 sm:grid-cols-12 gap-2">
+            <select class="sm:col-span-5 text-xs border border-slate-200 rounded-lg px-3 py-2.5 text-slate-600 bg-slate-50 focus:outline-none focus:border-forest">
+              <option>Selecione a unidade</option>
+              <option>Unidade Centro</option>
+              <option>Unidade Zona Norte</option>
+              <option>Unidade Zona Sul</option>
+            </select>
+            <input type="tel" placeholder="Seu WhatsApp" class="sm:col-span-5 text-xs border border-slate-200 rounded-lg px-3 py-2.5 bg-slate-50 focus:outline-none focus:border-forest">
+            <button type="submit" aria-label="Enviar" class="sm:col-span-2 bg-forest hover:bg-forest-deep text-white rounded-lg py-2.5 flex items-center justify-center text-xs transition">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Right Visual Card (Green Panel + Smiling Woman) -->
+      <div class="lg:col-span-6 relative">
+        <div class="relative bg-gradient-to-br from-[#157347] to-[#0b3b24] rounded-3xl overflow-hidden pt-8 px-6 pb-0 text-white shadow-xl">
+          <!-- Top Right Badge -->
+          <div class="flex justify-end mb-2">
+            <div class="text-right max-w-[200px]">
+              <span class="text-xs font-bold block leading-snug">Especialistas em cuidar de você</span>
+              <span class="text-[10px] text-emerald-200">Atendimento humanizado</span>
+            </div>
+          </div>
+
+          <div class="relative flex justify-center">
+            <img 
+              src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" 
+              alt="Paciente sorrindo" 
+              class="w-72 sm:w-80 h-80 sm:h-96 object-cover object-top rounded-t-2xl"
+            >
+
+            <!-- Bottom Overlay Chips -->
+            <div class="absolute bottom-4 inset-x-2 flex flex-wrap items-center justify-between gap-2">
+              <div class="bg-white/95 text-slate-800 px-3 py-1.5 rounded-full shadow flex items-center gap-1.5 text-[10px] font-bold">
+                <i class="fa-brands fa-google text-emerald-600"></i>
+                <span class="text-amber-500">★★★★★</span>
+                <span>4.9/5</span>
+              </div>
+
+              <div class="flex gap-2">
+                <div class="bg-forest-deep/90 backdrop-blur-xs border border-white/15 px-3 py-1.5 rounded-xl text-center">
+                  <span class="text-xs font-extrabold text-emerald-300 block leading-none">+20 anos</span>
+                  <span class="text-[9px] text-white/80">de história</span>
+                </div>
+                <div class="bg-forest-deep/90 backdrop-blur-xs border border-white/15 px-3 py-1.5 rounded-xl text-center">
+                  <span class="text-xs font-extrabold text-emerald-300 block leading-none">+50 mil</span>
+                  <span class="text-[9px] text-white/80">sorrisos</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEÇÃO 2: STATEMENT DE AUTORIDADE -->
+  <section class="py-16 bg-white border-t border-slate-100">
+    <div class="max-w-3xl mx-auto px-6 text-center">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug mb-4">
+        Há 20 anos, combinamos 
+        <span class="text-emerald-600">especialistas em ortodontia</span> com atendimento acolhedor para cada paciente 
+        <span class="inline-flex items-center align-middle bg-mint-soft text-forest px-2 py-0.5 rounded-full text-base">
+          <i class="fa-solid fa-face-smile"></i>
+        </span> 
+        sorrir com confiança.
+      </h2>
+      <p class="text-xs text-slate-500 max-w-lg mx-auto leading-relaxed mb-6">
+        Diagnóstico preciso, planejamento digital e acompanhamento em todas as fases do tratamento para resultados previsíveis e duradouros.
+      </p>
+      <a href="#agendar" class="inline-flex items-center gap-2 bg-emerald-cta hover:bg-emerald-cta-dark text-white font-bold text-xs px-5 py-2.5 rounded-full transition">
+        <span>Agendar avaliação</span>
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: APARELHO DENTAL PARA ALINHAR SEU SORRISO (2x2 CARDS + FOTO) -->
+  <section class="py-16 bg-sage-light">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-700 block mb-1.5">Benefícios</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+            Aparelho dental para<br>alinhar seu sorriso e<br>melhorar sua confiança
+          </h2>
+        </div>
+        <p class="text-xs text-slate-500 max-w-xs leading-relaxed">
+          Muito além da estética: o alinhamento correto melhora a mastigação, a higiene bucal e previne dores articulares.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+        <!-- Left 2x2 Benefit Grid -->
+        <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-2xs">
+            <span class="w-8 h-8 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-4">
+              <i class="fa-solid fa-face-laugh-beam"></i>
+            </span>
+            <h3 class="font-bold text-sm text-slate-900 mb-1.5">Estética e autoestima</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Sorria livremente em fotos, reuniões e momentos especiais com dentes alinhados e harmônicos.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-2xs">
+            <span class="w-8 h-8 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-4">
+              <i class="fa-solid fa-shield-heart"></i>
+            </span>
+            <h3 class="font-bold text-sm text-slate-900 mb-1.5">Saúde e prevenção</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Dentes bem posicionados facilitam a escovação e reduzem riscos de cáries e inflamações gengivais.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-2xs">
+            <span class="w-8 h-8 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-4">
+              <i class="fa-solid fa-utensils"></i>
+            </span>
+            <h3 class="font-bold text-sm text-slate-900 mb-1.5">Mastigação equilibrada</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Corrige problemas de mordida, evitando desgaste precoce dos dentes e sobrecarga muscular.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-2xl border border-slate-200/70 shadow-2xs">
+            <span class="w-8 h-8 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-4">
+              <i class="fa-solid fa-clock-rotate-left"></i>
+            </span>
+            <h3 class="font-bold text-sm text-slate-900 mb-1.5">Tratamento previsível</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Acompanhamento mensal com ortodontistas experientes para evoluir etapa por etapa com segurança.
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Portrait Card -->
+        <div class="lg:col-span-5 relative rounded-3xl overflow-hidden min-h-[340px] bg-forest shadow-md">
+          <img 
+            src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=700&q=80" 
+            alt="Paciente satisfeito" 
+            class="w-full h-full object-cover"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0b3b24]/90 via-transparent to-transparent"></div>
+          <div class="absolute bottom-5 left-5 right-5 text-white">
+            <span class="text-xs font-bold block">Resultados reais</span>
+            <span class="text-[11px] text-emerald-200">Planejamento personalizado para cada idade</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: QUAL APARELHO COMBINA COM O SEU MOMENTO? -->
+  <section id="aparelhos" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-700 block mb-1.5">Modalidades</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+            Qual aparelho combina<br>com o seu momento?
+          </h2>
+        </div>
+        <p class="text-xs text-slate-500 max-w-xs leading-relaxed">
+          Trabalhamos com diversas opções ortodônticas para atender seu estilo de vida, conforto e orçamento.
+        </p>
+      </div>
+
+      <!-- 2x2 Appliance Options -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+        <div class="bg-sage-light border border-emerald-900/10 rounded-2xl p-5 flex items-start gap-3.5">
+          <span class="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5">
+            <i class="fa-solid fa-check"></i>
+          </span>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 mb-1">Aparelho Fixo Metálico</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Eficiente, resistente e indicado para todos os tipos de movimentação dentária com excelente custo-benefício.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-sage-light border border-emerald-900/10 rounded-2xl p-5 flex items-start gap-3.5">
+          <span class="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5">
+            <i class="fa-solid fa-check"></i>
+          </span>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 mb-1">Aparelho Estético (Safira / Porcelana)</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Braquetes translúcidos que se camuflam na cor do dente, garantindo discrição durante todo o tratamento.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-sage-light border border-emerald-900/10 rounded-2xl p-5 flex items-start gap-3.5">
+          <span class="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5">
+            <i class="fa-solid fa-check"></i>
+          </span>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 mb-1">Aparelho Autoligado</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Dispensa as borrachinhas tradicionais, proporcionando menor atrito, mais conforto e consultas mais rápidas.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-sage-light border border-emerald-900/10 rounded-2xl p-5 flex items-start gap-3.5">
+          <span class="w-6 h-6 rounded-full bg-emerald-600 text-white flex items-center justify-center text-[10px] shrink-0 mt-0.5">
+            <i class="fa-solid fa-check"></i>
+          </span>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 mb-1">Alinhadores Transparentes</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Placas removíveis praticamente invisíveis para quem busca máxima liberdade para comer e higienizar os dentes.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wide Photo Banner -->
+      <div class="rounded-3xl overflow-hidden h-64 sm:h-72 shadow-md">
+        <img 
+          src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=1400&q=80" 
+          alt="Atendimento odontológico" 
+          class="w-full h-full object-cover object-center"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: COMEÇAR É MAIS FÁCIL DO QUE VOCÊ IMAGINA (DARK GREEN) -->
+  <section class="bg-forest-deep text-white py-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-lg mx-auto mb-12">
+        <span class="text-[10px] font-bold uppercase tracking-[0.22em] text-emerald-300 block mb-2">Passo a Passo</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold">
+          Começar é mais fácil do que você imagina
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="border-t border-emerald-400/30 pt-4">
+          <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-300 mb-2">
+            <i class="fa-regular fa-calendar"></i> Passo 01
+          </span>
+          <h3 class="font-bold text-sm mb-1.5">Agende sua avaliação</h3>
+          <p class="text-xs text-emerald-100/75 leading-relaxed">
+            Escolha a unidade mais próxima e o melhor horário pelo nosso WhatsApp ou formulário.
+          </p>
+        </div>
+
+        <div class="border-t border-emerald-400/30 pt-4">
+          <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-300 mb-2">
+            <i class="fa-solid fa-stethoscope"></i> Passo 02
+          </span>
+          <h3 class="font-bold text-sm mb-1.5">Avaliação clínica</h3>
+          <p class="text-xs text-emerald-100/75 leading-relaxed">
+            Nosso especialista analisa sua arcada, tira suas dúvidas e indica o aparelho ideal.
+          </p>
+        </div>
+
+        <div class="border-t border-emerald-400/30 pt-4">
+          <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-300 mb-2">
+            <i class="fa-solid fa-file-medical"></i> Passo 03
+          </span>
+          <h3 class="font-bold text-sm mb-1.5">Plano transparente</h3>
+          <p class="text-xs text-emerald-100/75 leading-relaxed">
+            Você recebe todas as etapas, prazos estimados e condições facilitadas antes de iniciar.
+          </p>
+        </div>
+
+        <div class="border-t border-emerald-400/30 pt-4">
+          <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-300 mb-2">
+            <i class="fa-solid fa-face-smile-beam"></i> Passo 04
+          </span>
+          <h3 class="font-bold text-sm mb-1.5">Início do tratamento</h3>
+          <p class="text-xs text-emerald-100/75 leading-relaxed">
+            Instalação do aparelho e acompanhamento mensal até a conquista do seu novo sorriso.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6: TUDO PARA CUIDAR DO SEU SORRISO EM UM SÓ LUGAR -->
+  <section id="tratamentos" class="py-16 bg-sage-light">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-700 block mb-1.5">Especialidades</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+            Tudo para cuidar do seu<br>sorriso em um só lugar
+          </h2>
+        </div>
+        <p class="text-xs text-slate-500 max-w-xs leading-relaxed">
+          Além da ortodontia, oferecemos uma estrutura completa de especialidades odontológicas para toda a família.
+        </p>
+      </div>
+
+      <!-- Bento Grid with Center Photo -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-white p-5 rounded-2xl border border-slate-200/70">
+          <span class="w-7 h-7 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-3">
+            <i class="fa-solid fa-teeth"></i>
+          </span>
+          <h3 class="font-bold text-xs text-slate-900 mb-1">Ortodontia</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Aparelhos fixos, estéticos, autoligados e alinhadores.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200/70">
+          <span class="w-7 h-7 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-3">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </span>
+          <h3 class="font-bold text-xs text-slate-900 mb-1">Clareamento Dental</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Técnicas seguras a laser ou caseiro supervisionado.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200/70">
+          <span class="w-7 h-7 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-3">
+            <i class="fa-solid fa-screw"></i>
+          </span>
+          <h3 class="font-bold text-xs text-slate-900 mb-1">Implantes Dentários</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Reabilitação oral com conforto, estética e função mastigatória.</p>
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200/70">
+          <span class="w-7 h-7 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-3">
+            <i class="fa-solid fa-shield-virus"></i>
+          </span>
+          <h3 class="font-bold text-xs text-slate-900 mb-1">Clínica Geral</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Limpeza, profilaxia, restaurações e prevenção contínua.</p>
+        </div>
+
+        <!-- Row 2: Side Card + Wide Center Photo + Side Card -->
+        <div class="bg-white p-5 rounded-2xl border border-slate-200/70 flex flex-col justify-center">
+          <span class="w-7 h-7 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-3">
+            <i class="fa-solid fa-crown"></i>
+          </span>
+          <h3 class="font-bold text-xs text-slate-900 mb-1">Próteses e Lentes</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Harmonia e naturalidade no formato e cor dos dentes.</p>
+        </div>
+
+        <div class="sm:col-span-2 rounded-2xl overflow-hidden h-44 shadow-xs">
+          <img 
+            src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" 
+            alt="Equipe e pacientes" 
+            class="w-full h-full object-cover"
+          >
+        </div>
+
+        <div class="bg-white p-5 rounded-2xl border border-slate-200/70 flex flex-col justify-center">
+          <span class="w-7 h-7 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-3">
+            <i class="fa-solid fa-child-reaching"></i>
+          </span>
+          <h3 class="font-bold text-xs text-slate-900 mb-1">Odontopediatria</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">Cuidado lúdico e preventivo para crianças e adolescentes.</p>
+        </div>
+
+        <!-- Row 3: 3 Equal Cards -->
+        <div class="lg:col-span-4 grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200/70">
+            <span class="w-7 h-7 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-3">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </span>
+            <h3 class="font-bold text-xs text-slate-900 mb-1">Endodontia (Canal)</h3>
+            <p class="text-[11px] text-slate-500 leading-relaxed">Tratamento moderno, rápido e indolor para preservar o dente natural.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200/70">
+            <span class="w-7 h-7 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-3">
+              <i class="fa-solid fa-tooth"></i>
+            </span>
+            <h3 class="font-bold text-xs text-slate-900 mb-1">Periodontia</h3>
+            <p class="text-[11px] text-slate-500 leading-relaxed">Saúde das gengivas e tecidos de sustentação dos dentes.</p>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200/70">
+            <span class="w-7 h-7 rounded-lg bg-mint-soft text-forest flex items-center justify-center text-xs mb-3">
+              <i class="fa-solid fa-x-ray"></i>
+            </span>
+            <h3 class="font-bold text-xs text-slate-900 mb-1">Documentação Ortodôntica</h3>
+            <p class="text-[11px] text-slate-500 leading-relaxed">Exames digitais integrados para agilizar o início do tratamento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7: CONVÊNIOS ODONTOLÓGICOS -->
+  <section id="convenios" class="py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <span class="text-[10px] font-bold uppercase tracking-[0.22em] text-emerald-700 block mb-2">Facilidade</span>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-8">
+        Atendemos diversos<br>planos odontológicos
+      </h2>
+
+      <!-- Logos Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 mb-8">
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">OdontoPrev</div>
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">Bradesco Dental</div>
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">SulAmérica</div>
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">MetLife</div>
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">Porto Seguro</div>
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">Amil Dental</div>
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">Unimed Odonto</div>
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">Interodonto</div>
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">Golden Cross</div>
+        <div class="border border-slate-200 rounded-xl py-4 px-3 flex items-center justify-center text-xs font-extrabold text-slate-500">Particular</div>
+      </div>
+
+      <a href="#agendar" class="inline-flex items-center gap-2 bg-emerald-cta hover:bg-emerald-cta-dark text-white font-bold text-xs px-5 py-2.5 rounded-full transition">
+        <span>Consultar cobertura do meu plano</span>
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 8: TEM SEMPRE UMA ORTOVIVA PERTO DE VOCÊ -->
+  <section id="unidades" class="bg-forest-deep text-white py-16">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 items-center gap-10">
+      <div class="md:col-span-5">
+        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-300 block mb-2">Localização</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold leading-tight mb-4">
+          Tem sempre uma <span class="text-emerald-400">OrtoViva</span> perto de você
+        </h2>
+        <p class="text-xs text-emerald-100/80 leading-relaxed mb-6">
+          Clínicas modernas, climatizadas e de fácil acesso para você manter suas manutenções em dia sem complicação.
+        </p>
+        <a href="#agendar" class="inline-flex items-center gap-2 bg-emerald-cta hover:bg-emerald-cta-dark text-white font-bold text-xs px-5 py-2.5 rounded-full transition">
+          <span>Encontrar unidade</span>
+          <i class="fa-solid fa-location-dot text-[10px]"></i>
+        </a>
+      </div>
+
+      <!-- Stylized Map Card -->
+      <div class="md:col-span-7">
+        <div class="bg-[#e8f5ec] rounded-3xl p-4 shadow-xl relative overflow-hidden h-64 flex items-center justify-center">
+          <iframe 
+            title="Mapa de Unidades OrtoViva"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-46.6650%2C-23.5650%2C-46.6150%2C-23.5350&amp;layer=mapnik" 
+            class="w-full h-full rounded-2xl border-0 opacity-90"
+            loading="lazy">
+          </iframe>
+          <div class="absolute left-7 top-7 bg-white text-slate-800 px-4 py-2.5 rounded-xl shadow-md border border-slate-100">
+            <span class="text-[10px] font-bold text-emerald-700 block">Unidades Estratégicas</span>
+            <span class="text-xs font-extrabold text-slate-900">Atendimento de Seg a Sáb</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 9: POR QUE ESCOLHER A ORTOVIVA? -->
+  <section id="sobre" class="bg-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12">
+      <!-- Left Soft Mint Panel -->
+      <div class="lg:col-span-5 bg-mint-soft pt-12 px-8 pb-0 flex flex-col justify-between">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-800 block mb-2">Nossa Essência</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight mb-6">
+            Por que escolher<br>a OrtoViva?
+          </h2>
+        </div>
+
+        <img 
+          src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=650&q=80" 
+          alt="Equipe de dentistas OrtoViva" 
+          class="w-72 sm:w-80 mx-auto h-72 object-cover object-top rounded-t-2xl"
+        >
+      </div>
+
+      <!-- Right Stats & Credibility -->
+      <div class="lg:col-span-7 p-8 sm:p-14 flex flex-col justify-center">
+        <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900 leading-snug mb-3">
+          Cuidar do seu sorriso é o mais importante para nós!
+        </h3>
+        <p class="text-xs text-slate-500 leading-relaxed max-w-lg mb-8">
+          Unimos experiência clínica, equipamentos modernos e um atendimento humano para que você se sinta acolhido em cada consulta.
+        </p>
+
+        <!-- 4 Metric Boxes -->
+        <div class="grid grid-cols-2 gap-4">
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <span class="text-2xl sm:text-3xl font-extrabold text-forest block mb-1">20</span>
+            <span class="text-xs font-bold text-slate-800 block">Anos de experiência</span>
+            <span class="text-[11px] text-slate-500">Tradição e confiança em ortodontia.</span>
+          </div>
+
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <span class="text-2xl sm:text-3xl font-extrabold text-forest block mb-1">+50 mil</span>
+            <span class="text-xs font-bold text-slate-800 block">Pacientes atendidos</span>
+            <span class="text-[11px] text-slate-500">Histórias transformadas com sucesso.</span>
+          </div>
+
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <span class="text-2xl sm:text-3xl font-extrabold text-forest block mb-1">100%</span>
+            <span class="text-xs font-bold text-slate-800 block">Foco em qualidade</span>
+            <span class="text-[11px] text-slate-500">Materiais certificados e biossegurança.</span>
+          </div>
+
+          <div class="border border-slate-200 rounded-2xl p-5">
+            <span class="text-2xl sm:text-3xl font-extrabold text-forest block mb-1">4.9 ★</span>
+            <span class="text-xs font-bold text-slate-800 block">Avaliação no Google</span>
+            <span class="text-[11px] text-slate-500">Satisfação comprovada pelos pacientes.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 10: DEPOIMENTO DESTAQUE (DARK GREEN) -->
+  <section class="bg-forest-deep text-white py-16">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 items-center gap-8">
+      <!-- Left Title -->
+      <div class="md:col-span-4">
+        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-300 block mb-2">Depoimentos</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold leading-tight mb-4">
+          Sorrisos que contam nossa história
+        </h2>
+        <div class="flex items-center gap-2">
+          <button type="button" aria-label="Anterior" class="w-8 h-8 rounded-full border border-white/25 flex items-center justify-center text-xs hover:bg-white/10 transition">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" aria-label="Próximo" class="w-8 h-8 rounded-full bg-emerald-cta flex items-center justify-center text-xs hover:bg-emerald-cta-dark transition">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Center Featured Testimonial Card -->
+      <div class="md:col-span-5">
+        <div class="bg-[#145c3a] border border-emerald-400/25 rounded-3xl overflow-hidden shadow-2xl">
+          <div class="relative h-56">
+            <img 
+              src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" 
+              alt="Paciente OrtoViva" 
+              class="w-full h-full object-cover"
+            >
+            <span class="absolute top-3 left-3 bg-emerald-cta text-white text-[10px] font-bold px-2.5 py-1 rounded-full">
+              Paciente Verificada
+            </span>
+          </div>
+          <div class="p-6">
+            <p class="text-xs text-emerald-50 leading-relaxed mb-4">
+              "Eu tinha muita vergonha de sorrir nas fotos. Desde a primeira avaliação na OrtoViva fui super bem atendida e hoje tenho o sorriso que sempre sonhei!"
+            </p>
+            <div class="flex items-center justify-between">
+              <div>
+                <span class="text-xs font-bold block">Camila Fernandes</span>
+                <span class="text-[10px] text-emerald-300">Tratamento Ortodôntico</span>
+              </div>
+              <span class="text-amber-400 text-xs">★★★★★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Faded Preview Card -->
+      <div class="hidden md:block md:col-span-3 opacity-45">
+        <div class="bg-[#145c3a] rounded-2xl p-5 border border-white/10">
+          <p class="text-[11px] leading-relaxed mb-3">
+            "Atendimento pontual, equipe atenciosa e preço justo. Recomendo para toda a família."
+          </p>
+          <span class="text-[11px] font-bold block">Lucas Andrade</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 11: FAQ ACCORDION -->
+  <section class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-10 items-start">
+      <!-- Left Info -->
+      <div class="md:col-span-4">
+        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-700 block mb-2">Dúvidas Frequentes</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight mb-4">
+          Tudo claro antes de começar
+        </h2>
+        <p class="text-xs text-slate-500 leading-relaxed mb-6">
+          Reunimos as principais perguntas de quem deseja iniciar um tratamento ortodôntico na OrtoViva.
+        </p>
+        <a href="#agendar" class="inline-flex items-center gap-2 bg-emerald-cta hover:bg-emerald-cta-dark text-white font-bold text-xs px-5 py-2.5 rounded-full transition">
+          <span>Falar no WhatsApp</span>
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+        </a>
+      </div>
+
+      <!-- Right Accordion -->
+      <div class="md:col-span-8 divide-y divide-slate-200 border-t border-b border-slate-200">
+        <details class="py-4 group" open>
+          <summary class="flex items-center justify-between cursor-pointer text-xs sm:text-sm font-bold text-slate-900 list-none">
+            <span>Quanto tempo dura um tratamento com aparelho ortodôntico?</span>
+            <span class="w-6 h-6 rounded-full bg-mint-soft text-forest flex items-center justify-center text-[10px] group-open:rotate-180 transition-transform">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            O tempo varia conforme a complexidade de cada caso, geralmente entre 12 e 24 meses. Na avaliação inicial, o ortodontista apresenta uma estimativa personalizada para o seu sorriso.
+          </p>
+        </details>
+
+        <details class="py-4 group">
+          <summary class="flex items-center justify-between cursor-pointer text-xs sm:text-sm font-bold text-slate-900 list-none">
+            <span>Colocar aparelho dói?</span>
+            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center text-[10px] group-open:rotate-180 transition-transform">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            A instalação é totalmente indolor. Nos primeiros dias após a colocação ou manutenção, pode haver uma leve sensibilidade passageira que desaparece rapidamente.
+          </p>
+        </details>
+
+        <details class="py-4 group">
+          <summary class="flex items-center justify-between cursor-pointer text-xs sm:text-sm font-bold text-slate-900 list-none">
+            <span>Adultos também podem usar aparelho dental?</span>
+            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center text-[10px] group-open:rotate-180 transition-transform">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Com certeza! Não existe limite de idade para alinhar os dentes. Inclusive, temos opções super discretas como o aparelho de safira e os alinhadores transparentes.
+          </p>
+        </details>
+
+        <details class="py-4 group">
+          <summary class="flex items-center justify-between cursor-pointer text-xs sm:text-sm font-bold text-slate-900 list-none">
+            <span>Vocês aceitam convênio odontológico?</span>
+            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center text-[10px] group-open:rotate-180 transition-transform">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Sim, trabalhamos com os principais convênios odontológicos do mercado, além de planos particulares com condições acessíveis.
+          </p>
+        </details>
+
+        <details class="py-4 group">
+          <summary class="flex items-center justify-between cursor-pointer text-xs sm:text-sm font-bold text-slate-900 list-none">
+            <span>Como agendar minha primeira avaliação?</span>
+            <span class="w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center text-[10px] group-open:rotate-180 transition-transform">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Basta preencher o formulário no topo da página ou clicar no botão do WhatsApp para escolher a unidade e o horário mais conveniente para você.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 12: CTA FINAL BANNER -->
+  <section class="bg-gradient-to-r from-[#157347] to-[#0f5132] text-white overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6 pt-12 pb-0 grid grid-cols-1 md:grid-cols-12 items-center gap-8">
+      <div class="md:col-span-7 pb-12">
+        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-200 block mb-2">Comece hoje</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
+          Dê o primeiro passo<br>para alinhar seu sorriso
+        </h2>
+        <p class="text-xs sm:text-sm text-emerald-100/90 max-w-md leading-relaxed mb-6">
+          Agende sua avaliação na OrtoViva e descubra qual é o melhor tratamento para você sorrir com total segurança.
+        </p>
+        <a href="#agendar" class="inline-flex items-center gap-2 bg-white hover:bg-emerald-50 text-forest font-bold text-xs px-6 py-3 rounded-full shadow-lg transition">
+          <span>Agendar minha avaliação</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+      </div>
+
+      <div class="md:col-span-5 flex justify-center md:justify-end self-end">
+        <img 
+          src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80" 
+          alt="Dentista especialista OrtoViva" 
+          class="w-64 sm:w-72 h-72 object-cover object-top rounded-t-2xl"
+        >
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-forest-deep text-emerald-100/75 pt-14 pb-8">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 pb-10 border-b border-white/10">
+      <!-- Brand -->
+      <div class="lg:col-span-5">
+        <a href="#" class="inline-flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg mb-4">
+          <span class="w-6 h-6 rounded bg-forest text-white flex items-center justify-center text-[10px] font-extrabold">
+            <i class="fa-solid fa-tooth"></i>
+          </span>
+          <span class="font-extrabold text-sm text-forest">Orto<span class="text-emerald-600">Viva</span></span>
+        </a>
+        <p class="text-[11px] leading-relaxed max-w-xs mb-4">
+          Clínica especializada em ortodontia e saúde bucal integrada. Compromisso com qualidade, ética e bem-estar.
+        </p>
+        <div class="flex items-center gap-3 text-white text-xs">
+          <a href="#" aria-label="Instagram" class="w-7 h-7 rounded-full bg-white/10 hover:bg-emerald-600 flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="w-7 h-7 rounded-full bg-white/10 hover:bg-emerald-600 flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="WhatsApp" class="w-7 h-7 rounded-full bg-white/10 hover:bg-emerald-600 flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="lg:col-span-3">
+        <h4 class="text-xs font-bold text-white mb-3">Navegação</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li><a href="#aparelhos" class="hover:text-white transition">Tipos de Aparelho</a></li>
+          <li><a href="#tratamentos" class="hover:text-white transition">Especialidades</a></li>
+          <li><a href="#convenios" class="hover:text-white transition">Convênios</a></li>
+          <li><a href="#unidades" class="hover:text-white transition">Unidades</a></li>
+        </ul>
+      </div>
+
+      <!-- Atendimento -->
+      <div class="lg:col-span-4">
+        <h4 class="text-xs font-bold text-white mb-3">Atendimento</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li class="flex items-center gap-2">
+            <i class="fa-solid fa-phone text-emerald-400"></i>
+            <span>0800 000 0000 • (11) 99999-9999</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-regular fa-clock text-emerald-400"></i>
+            <span>Segunda a Sexta: 08h às 19h • Sábado: 08h às 13h</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-solid fa-file-medical text-emerald-400"></i>
+            <span>CRO-SP CL 00000</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-6 pt-6 flex flex-col sm:flex-row items-center justify-between text-[10px] text-emerald-200/50 gap-2">
+      <span>© 2026 OrtoViva Odontologia. Todos os direitos reservados.</span>
+      <span>Responsável Técnico: Dr. Especialista • CRO 00000</span>
+    </div>
+  </footer>
+
+</body>
+</html>

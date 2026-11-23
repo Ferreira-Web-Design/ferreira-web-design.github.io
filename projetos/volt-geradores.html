@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volt Geradores — Manutenção, Instalação e Automação de Grupos Geradores</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .bg-navy {
+      background-color: #091335;
+    }
+    .text-navy {
+      color: #091335;
+    }
+    .bg-lime-brand {
+      background-color: #a9e536;
+    }
+    .hover\:bg-lime-brand-dark:hover {
+      background-color: #97d424;
+    }
+    .text-lime-brand {
+      color: #a9e536;
+    }
+    .border-lime-brand {
+      border-color: #a9e536;
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-[#f5f7fa]">
+
+  <!-- HERO SECTION -->
+  <header class="relative bg-navy text-white overflow-hidden">
+    <!-- Background industrial generator overlay -->
+    <div class="absolute inset-0 bg-cover bg-right opacity-25 mix-blend-luminosity" style="background-image: url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1600&q=80');"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-[#060d26] via-[#091335]/95 to-[#091335]/65"></div>
+
+    <!-- Floating White Pill Navbar -->
+    <div class="relative z-20 max-w-6xl mx-auto px-4 pt-5">
+      <nav class="bg-white text-navy rounded-xl px-5 py-3 shadow-lg flex items-center justify-between">
+        <!-- Brand Logo -->
+        <a href="#" class="flex items-center gap-2">
+          <span class="bg-lime-brand text-navy font-extrabold text-sm px-2 py-0.5 rounded italic tracking-tighter">VT</span>
+          <span class="font-extrabold text-xs tracking-wider uppercase">GERADORES</span>
+        </a>
+
+        <!-- Menu Links -->
+        <ul class="hidden lg:flex items-center gap-6 text-[11px] font-semibold text-slate-600">
+          <li><a href="#problemas" class="hover:text-navy transition">Por que prevenir</a></li>
+          <li><a href="#sobre" class="hover:text-navy transition">Sobre nós</a></li>
+          <li><a href="#servicos" class="hover:text-navy transition">Serviços</a></li>
+          <li><a href="#processo" class="hover:text-navy transition">Como funciona</a></li>
+          <li><a href="#projetos" class="hover:text-navy transition">Projetos</a></li>
+          <li><a href="#depoimentos" class="hover:text-navy transition">Avaliações</a></li>
+          <li><a href="#faq" class="hover:text-navy transition">Dúvidas</a></li>
+        </ul>
+
+        <!-- CTA Button -->
+        <a href="#contato" class="inline-flex items-center gap-2 bg-lime-brand hover:bg-lime-brand-dark text-navy font-bold text-[11px] px-4 py-2 rounded-lg transition">
+          <span>Solicitar orçamento</span>
+          <span class="w-4 h-4 rounded bg-navy text-lime-brand flex items-center justify-center text-[9px]">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </a>
+      </nav>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pt-12 pb-0 grid grid-cols-1 lg:grid-cols-12 items-center gap-8">
+      <!-- Left Copy -->
+      <div class="lg:col-span-6 pb-16 lg:pb-24">
+        <span class="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-lime-brand mb-3">
+          <span class="w-2 h-2 rounded-full bg-lime-brand"></span>
+          Energia contínua sem imprevistos
+        </span>
+        <h1 class="text-3xl sm:text-4xl lg:text-[42px] font-extrabold leading-[1.14] mb-4">
+          Seu gerador pronto quando a energia cair.
+        </h1>
+        <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-md mb-7">
+          Manutenção preventiva, corretiva, instalação e automação de grupos geradores para indústrias, comércios, hospitais e condomínios.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 mb-7">
+          <a href="#contato" class="inline-flex items-center gap-2.5 bg-lime-brand hover:bg-lime-brand-dark text-navy font-bold text-xs px-5 py-3.5 rounded-lg transition shadow-lg">
+            <span>Agendar visita técnica</span>
+            <span class="w-5 h-5 rounded bg-navy text-lime-brand flex items-center justify-center text-[10px]">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </a>
+        </div>
+
+        <!-- Google Reviews Mini Badge -->
+        <div class="inline-flex items-center gap-2.5 bg-white/10 border border-white/15 rounded-lg px-3.5 py-2">
+          <i class="fa-brands fa-google text-lime-brand text-xs"></i>
+          <div class="flex text-amber-400 text-[10px] gap-0.5">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <span class="text-[11px] text-slate-200 font-medium">5.0 • Atendimento técnico especializado</span>
+        </div>
+      </div>
+
+      <!-- Right Technician Portrait -->
+      <div class="lg:col-span-6 flex justify-center lg:justify-end self-end">
+        <img 
+          src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=800&q=80" 
+          alt="Técnico especialista em geradores" 
+          class="w-80 sm:w-96 lg:w-full max-w-[430px] h-[400px] sm:h-[440px] object-cover object-top rounded-t-2xl"
+        >
+      </div>
+    </div>
+
+    <!-- Bottom Center Down Arrow Notch -->
+    <div class="relative z-20 flex justify-center -mb-4">
+      <a href="#problemas" aria-label="Rolar para baixo" class="w-9 h-9 rounded-full bg-white text-navy shadow-md flex items-center justify-center text-xs hover:bg-lime-brand transition">
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- SEÇÃO 2: GERADOR QUE FALHA NA HORA H -->
+  <section id="problemas" class="py-20 bg-[#f5f7fa] relative">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-end mb-10">
+        <div class="md:col-span-6">
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 block mb-1.5">Riscos Operacionais</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-navy leading-tight">
+            Gerador que falha na hora H custa caro.
+          </h2>
+        </div>
+        <div class="md:col-span-6">
+          <p class="text-xs text-slate-500 leading-relaxed">
+            A falta de manutenção periódica compromete baterias, filtros, sistema de arrefecimento e transferência automática — deixando sua operação vulnerável justamente no apagão.
+          </p>
+        </div>
+      </div>
+
+      <!-- 3 Cards: White, Lime Green, Dark Navy -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <!-- Card 1: White -->
+        <div class="bg-white border border-slate-200/80 rounded-2xl p-6 shadow-xs">
+          <div class="w-8 h-8 rounded-lg bg-lime-brand/25 text-navy flex items-center justify-center text-xs mb-4">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <h3 class="font-bold text-sm text-navy mb-2">Parada inesperada da operação</h3>
+          <p class="text-xs text-slate-500 leading-relaxed">
+            Prejuízos imediatos com perda de produção, insumos refrigerados, sistemas críticos e interrupção de atendimento.
+          </p>
+        </div>
+
+        <!-- Card 2: Lime Green -->
+        <div class="bg-lime-brand text-navy rounded-2xl p-6 shadow-sm">
+          <div class="w-8 h-8 rounded-lg bg-navy text-lime-brand flex items-center justify-center text-xs mb-4">
+            <i class="fa-solid fa-wrench"></i>
+          </div>
+          <h3 class="font-bold text-sm mb-2">Reparos emergenciais até 4x mais caros</h3>
+          <p class="text-xs text-navy/85 leading-relaxed">
+            Corrigir falhas graves no motor ou alternador após quebra custa muito mais do que um plano preventivo mensal.
+          </p>
+        </div>
+
+        <!-- Card 3: Dark Navy -->
+        <div class="bg-navy text-white rounded-2xl p-6 shadow-sm">
+          <div class="w-8 h-8 rounded-lg bg-lime-brand text-navy flex items-center justify-center text-xs mb-4">
+            <i class="fa-solid fa-bolt"></i>
+          </div>
+          <h3 class="font-bold text-sm mb-2">Falha na transferência automática (QTA)</h3>
+          <p class="text-xs text-slate-300 leading-relaxed">
+            Sem testes sob carga, o gerador pode até ligar, mas não assume a energia do prédio no momento crítico.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: SOBRE / ESPECIALISTAS EM ENERGIA DE BACKUP -->
+  <section id="sobre" class="py-16 bg-white">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 items-center gap-10">
+      <!-- Left Stacked Images with Center JS Badge -->
+      <div class="md:col-span-5 relative space-y-3">
+        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600&q=80" alt="Manutenção de gerador" class="w-full h-44 object-cover rounded-2xl shadow">
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Instalação de grupo gerador" class="w-full h-44 object-cover rounded-2xl shadow">
+        
+        <!-- Center Badge -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="bg-navy border-2 border-lime-brand px-4 py-1.5 rounded-lg shadow-lg flex items-center gap-1.5">
+            <span class="bg-lime-brand text-navy font-extrabold text-xs px-1.5 py-0.5 rounded italic">VT</span>
+            <span class="text-white font-bold text-[10px] tracking-wider uppercase">GERADORES</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Text -->
+      <div class="md:col-span-7">
+        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 block mb-2">Quem Somos</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy leading-tight mb-4">
+          A Volt Geradores mantém sua operação sempre ligada.
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
+          Com equipe técnica qualificada e atendimento ágil, atuamos em todo o ciclo de vida do seu grupo gerador: dimensionamento, instalação completa, automação de QTA e manutenção preventiva.
+        </p>
+
+        <ul class="space-y-3 text-xs text-slate-700 font-medium mb-7">
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded bg-lime-brand text-navy flex items-center justify-center text-[10px] font-bold">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span>Técnicos especializados em motores diesel e gás das principais marcas</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded bg-lime-brand text-navy flex items-center justify-center text-[10px] font-bold">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span>Relatórios técnicos detalhados com checklist completo a cada visita</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded bg-lime-brand text-navy flex items-center justify-center text-[10px] font-bold">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span>Suporte emergencial rápido para contratos de manutenção</span>
+          </li>
+        </ul>
+
+        <a href="#contato" class="inline-flex items-center gap-2 bg-navy hover:bg-slate-800 text-white font-bold text-xs px-5 py-3 rounded-lg transition">
+          <span>Falar com um especialista</span>
+          <i class="fa-solid fa-arrow-right text-lime-brand text-[10px]"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: DIFERENCIAIS / POR QUE ESCOLHER (DARK NAVY) -->
+  <section class="relative bg-navy text-white py-20">
+    <!-- Top Center Notch -->
+    <div class="absolute -top-4 inset-x-0 flex justify-center">
+      <span class="w-8 h-8 rounded-full bg-white text-navy shadow flex items-center justify-center text-xs">
+        <i class="fa-solid fa-bolt"></i>
+      </span>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-[10px] font-bold uppercase tracking-[0.22em] text-lime-brand block mb-2">Diferenciais Técnicos</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold">
+          Mais que manutenção: segurança energética real
+        </h2>
+      </div>
+
+      <!-- 4 White Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+        <div class="bg-white text-slate-800 p-5 rounded-xl">
+          <span class="w-7 h-7 rounded-md bg-lime-brand text-navy flex items-center justify-center text-xs font-bold mb-3">
+            <i class="fa-solid fa-clipboard-check"></i>
+          </span>
+          <h3 class="font-bold text-xs text-navy mb-1.5">Checklist rigoroso</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">
+            Inspeção completa de fluidos, filtros, baterias, correias, sensores e testes de partida.
+          </p>
+        </div>
+
+        <div class="bg-white text-slate-800 p-5 rounded-xl">
+          <span class="w-7 h-7 rounded-md bg-lime-brand text-navy flex items-center justify-center text-xs font-bold mb-3">
+            <i class="fa-solid fa-clock"></i>
+          </span>
+          <h3 class="font-bold text-xs text-navy mb-1.5">Atendimento ágil</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">
+            Resposta rápida em chamados emergenciais para minimizar qualquer tempo de indisponibilidade.
+          </p>
+        </div>
+
+        <div class="bg-white text-slate-800 p-5 rounded-xl">
+          <span class="w-7 h-7 rounded-md bg-lime-brand text-navy flex items-center justify-center text-xs font-bold mb-3">
+            <i class="fa-solid fa-microchip"></i>
+          </span>
+          <h3 class="font-bold text-xs text-navy mb-1.5">Automação inteligente</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">
+            Programação e retrofit de controladores digitais e quadros de transferência automática (QTA).
+          </p>
+        </div>
+
+        <div class="bg-white text-slate-800 p-5 rounded-xl">
+          <span class="w-7 h-7 rounded-md bg-lime-brand text-navy flex items-center justify-center text-xs font-bold mb-3">
+            <i class="fa-solid fa-shield-halved"></i>
+          </span>
+          <h3 class="font-bold text-xs text-navy mb-1.5">Conformidade e normas</h3>
+          <p class="text-[11px] text-slate-500 leading-relaxed">
+            Execução dentro das normas técnicas NR-10, NR-12 e padrões ambientais de emissão e ruído.
+          </p>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <a href="#contato" class="inline-flex items-center gap-2 bg-lime-brand hover:bg-lime-brand-dark text-navy font-bold text-xs px-6 py-3 rounded-lg transition">
+          <span>Solicitar proposta personalizada</span>
+          <span class="w-4 h-4 rounded bg-navy text-lime-brand flex items-center justify-center text-[9px]">
+            <i class="fa-solid fa-arrow-right"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: SOLUÇÕES COMPLETAS (CARDS DE SERVIÇOS) -->
+  <section id="servicos" class="py-20 bg-[#f5f7fa]">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 block mb-1.5">Nossas Especialidades</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-navy">
+            Soluções completas em grupos geradores
+          </h2>
+        </div>
+        <div class="flex items-center gap-2">
+          <button type="button" aria-label="Anterior" class="w-8 h-8 rounded-lg bg-lime-brand/40 text-navy flex items-center justify-center text-xs hover:bg-lime-brand transition">
+            <i class="fa-solid fa-chevron-left"></i>
+          </button>
+          <button type="button" aria-label="Próximo" class="w-8 h-8 rounded-lg bg-lime-brand text-navy flex items-center justify-center text-xs hover:bg-lime-brand-dark transition">
+            <i class="fa-solid fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- 4 Visual Service Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <!-- Service 1 -->
+        <div class="relative h-72 rounded-2xl overflow-hidden group shadow-md">
+          <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=600&q=80" alt="Manutenção Preventiva" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#091335] via-[#091335]/60 to-transparent"></div>
+          <div class="absolute bottom-0 p-5 text-white">
+            <span class="inline-block bg-lime-brand text-navy text-[9px] font-extrabold uppercase px-2 py-0.5 rounded mb-2">Planos Mensais</span>
+            <h3 class="font-bold text-sm mb-1">Manutenção Preventiva</h3>
+            <p class="text-[11px] text-slate-300 leading-snug">
+              Visitas programadas com troca de óleo, filtros, testes de carga e laudo técnico.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="relative h-72 rounded-2xl overflow-hidden group shadow-md">
+          <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80" alt="Instalação e Montagem" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#091335] via-[#091335]/60 to-transparent"></div>
+          <div class="absolute bottom-0 p-5 text-white">
+            <span class="inline-block bg-lime-brand text-navy text-[9px] font-extrabold uppercase px-2 py-0.5 rounded mb-2">Turnkey</span>
+            <h3 class="font-bold text-sm mb-1">Instalação e Infraestrutura</h3>
+            <p class="text-[11px] text-slate-300 leading-snug">
+              Posicionamento, dutos de exaustão, atenuação acústica e cabeamento de potência.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="relative h-72 rounded-2xl overflow-hidden group shadow-md">
+          <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=600&q=80" alt="Manutenção Corretiva" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#091335] via-[#091335]/60 to-transparent"></div>
+          <div class="absolute bottom-0 p-5 text-white">
+            <span class="inline-block bg-lime-brand text-navy text-[9px] font-extrabold uppercase px-2 py-0.5 rounded mb-2">Diagnóstico</span>
+            <h3 class="font-bold text-sm mb-1">Manutenção Corretiva</h3>
+            <p class="text-[11px] text-slate-300 leading-snug">
+              Reparo de motores, alternadores, bombas injetoras, radiadores e sistemas elétricos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="relative h-72 rounded-2xl overflow-hidden group shadow-md">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=600&q=80" alt="Automação e QTA" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-[#091335] via-[#091335]/60 to-transparent"></div>
+          <div class="absolute bottom-0 p-5 text-white">
+            <span class="inline-block bg-lime-brand text-navy text-[9px] font-extrabold uppercase px-2 py-0.5 rounded mb-2">Painéis</span>
+            <h3 class="font-bold text-sm mb-1">Automação e QTA</h3>
+            <p class="text-[11px] text-slate-300 leading-snug">
+              Montagem e modernização de quadros de comando e transferência automática.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6: COMO FUNCIONA (TIMELINE ALTERNADA) -->
+  <section id="processo" class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-6">
+      <div class="text-center max-w-lg mx-auto mb-14">
+        <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-slate-400 block mb-1.5">Passo a Passo</span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-navy mb-2">
+          Como funciona nosso atendimento técnico
+        </h2>
+        <p class="text-xs text-slate-500">
+          Processo transparente desde o diagnóstico inicial até a entrega técnica com garantia.
+        </p>
+      </div>
+
+      <div class="space-y-12 relative">
+        <!-- Step 1 -->
+        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-6">
+          <div class="md:col-span-5">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=500&q=80" alt="Vistoria técnica" class="w-full h-44 object-cover rounded-2xl shadow">
+          </div>
+          <div class="md:col-span-2 flex justify-center">
+            <span class="w-9 h-9 rounded-lg bg-lime-brand text-navy font-extrabold text-xs flex items-center justify-center shadow">01</span>
+          </div>
+          <div class="md:col-span-5">
+            <h3 class="font-bold text-base text-navy mb-2">Diagnóstico e Vistoria Técnica</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Avaliamos in loco o estado atual do seu equipamento, carga instalada, infraestrutura elétrica e necessidades específicas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-6">
+          <div class="md:col-span-5 order-3 md:order-1 md:text-right">
+            <h3 class="font-bold text-base text-navy mb-2">Proposta Técnica Detalhada</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Apresentamos um escopo claro com peças, periodicidade recomendada, cronograma e investimento sem surpresas.
+            </p>
+          </div>
+          <div class="md:col-span-2 flex justify-center order-2">
+            <span class="w-9 h-9 rounded-lg bg-lime-brand text-navy font-extrabold text-xs flex items-center justify-center shadow">02</span>
+          </div>
+          <div class="md:col-span-5 order-1 md:order-3">
+            <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=500&q=80" alt="Execução técnica" class="w-full h-44 object-cover rounded-2xl shadow">
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="grid grid-cols-1 md:grid-cols-12 items-center gap-6">
+          <div class="md:col-span-5">
+            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=500&q=80" alt="Testes e entrega" class="w-full h-44 object-cover rounded-2xl shadow">
+          </div>
+          <div class="md:col-span-2 flex justify-center">
+            <span class="w-9 h-9 rounded-lg bg-lime-brand text-navy font-extrabold text-xs flex items-center justify-center shadow">03</span>
+          </div>
+          <div class="md:col-span-5">
+            <h3 class="font-bold text-base text-navy mb-2">Execução, Testes e Laudo Final</h3>
+            <p class="text-xs text-slate-500 leading-relaxed">
+              Realizamos o serviço com peças homologadas, simulamos queda de energia e entregamos o relatório técnico completo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 7: GALERIA DE PROJETOS (DARK NAVY) -->
+  <section id="projetos" class="bg-navy text-white py-20">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-lime-brand block mb-1.5">Portfólio Técnico</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold">
+            Cada projeto realizado na prática
+          </h2>
+        </div>
+        <p class="text-xs text-slate-300 max-w-sm leading-relaxed">
+          Confira registros reais de instalações, retrofits de painéis e manutenções executadas pela nossa equipe.
+        </p>
+      </div>
+
+      <!-- 6-Photo Mosaic Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=500&q=80" alt="Projeto 1" class="w-full h-44 object-cover rounded-xl border border-white/10">
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=500&q=80" alt="Projeto 2" class="w-full h-44 object-cover rounded-xl border border-white/10">
+        <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=500&q=80" alt="Projeto 3" class="w-full h-44 object-cover rounded-xl border border-white/10">
+        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=500&q=80" alt

@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Henrique — Especialista em Cirurgia Plástica em Guarapuava</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-serif-display {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .bg-obsidian {
+      background-color: #0e1618;
+    }
+    .bg-obsidian-card {
+      background-color: #141f22;
+    }
+    .bg-sand {
+      background-color: #e6cbb1;
+    }
+    .hover\:bg-sand-dark:hover {
+      background-color: #d8b798;
+    }
+    .text-sand {
+      color: #e6cbb1;
+    }
+    .border-sand {
+      border-color: #e6cbb1;
+    }
+  </style>
+</head>
+<body class="antialiased text-slate-800 bg-[#f6f6f5] selection:bg-[#e6cbb1] selection:text-[#0e1618]">
+
+  <!-- NAVBAR & HERO SECTION -->
+  <header class="relative bg-obsidian text-white overflow-hidden">
+    <!-- Subtle Monogram Watermark -->
+    <div class="pointer-events-none select-none absolute -left-16 top-16 font-serif-display text-[380px] leading-none text-white/[0.025] italic">
+      H
+    </div>
+
+    <!-- Top Navigation -->
+    <nav class="relative z-10 max-w-6xl mx-auto px-6 py-5 flex items-center justify-between border-b border-white/10">
+      <a href="#" class="flex items-center gap-2.5">
+        <span class="font-serif-display text-2xl italic text-sand">H</span>
+        <div class="leading-tight">
+          <span class="text-xs font-medium tracking-wide block">Dr. Henrique</span>
+          <span class="text-[9px] uppercase tracking-[0.2em] text-slate-400 block">Cirurgia Plástica</span>
+        </div>
+      </a>
+
+      <ul class="hidden md:flex items-center gap-7 text-[11px] text-slate-300 font-light">
+        <li><a href="#sobre" class="hover:text-sand transition">Sobre</a></li>
+        <li><a href="#procedimentos" class="hover:text-sand transition">Procedimentos</a></li>
+        <li><a href="#diferenciais" class="hover:text-sand transition">Diferenciais</a></li>
+        <li><a href="#depoimentos" class="hover:text-sand transition">Depoimentos</a></li>
+        <li><a href="#processo" class="hover:text-sand transition">Como funciona</a></li>
+        <li><a href="#faq" class="hover:text-sand transition">Dúvidas</a></li>
+      </ul>
+
+      <a href="#contato" class="text-[11px] border border-white/25 hover:border-sand hover:text-sand px-4 py-2 rounded transition">
+        Agendar consulta
+      </a>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 max-w-6xl mx-auto px-6 pt-12 pb-0 grid grid-cols-1 lg:grid-cols-12 items-center gap-10">
+      <!-- Left Copy -->
+      <div class="lg:col-span-6 pb-14 lg:pb-24">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-sand/80 block mb-3">
+          Membro Titular SBCP
+        </span>
+        <h1 class="font-serif-display text-4xl sm:text-5xl lg:text-[52px] font-normal leading-[1.12] mb-5">
+          Especialista em cirurgia plástica em Guarapuava.
+        </h1>
+        <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed max-w-md mb-8">
+          Planejamento cirúrgico individualizado, segurança hospitalar e resultados naturais que respeitam a harmonia do seu corpo.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-4 mb-8">
+          <a href="#contato" class="inline-flex items-center gap-2.5 bg-sand hover:bg-sand-dark text-[#0e1618] font-semibold text-xs px-6 py-3.5 rounded transition shadow-lg">
+            <span>Agendar minha avaliação</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Google Reviews Mini Badge -->
+        <div class="inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-lg px-3.5 py-2">
+          <div class="flex text-amber-400 text-[10px] gap-0.5">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <span class="text-[11px] text-slate-300">5.0 no Google • Atendimento humanizado</span>
+        </div>
+      </div>
+
+      <!-- Right Portrait -->
+      <div class="lg:col-span-6 flex justify-center lg:justify-end self-end relative">
+        <img 
+          src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=800&q=80" 
+          alt="Dr. Henrique - Cirurgião Plástico" 
+          class="w-full max-w-[440px] h-[440px] sm:h-[490px] object-cover object-top rounded-t-2xl"
+        >
+      </div>
+    </div>
+  </header>
+
+  <!-- SEÇÃO 2: IDENTIFICAÇÃO / DOR DA PACIENTE -->
+  <section class="relative bg-[#f6f6f5] py-24 overflow-hidden">
+    <div class="max-w-5xl mx-auto px-6 relative">
+      <!-- Floating Polaroid Top Left -->
+      <div class="hidden md:block absolute -top-10 left-2 w-32 bg-white p-2 rounded-lg shadow-md -rotate-6 border border-slate-200/70">
+        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=300&q=80" alt="Reflexão" class="w-full h-24 object-cover rounded">
+      </div>
+
+      <!-- Floating Polaroid Bottom Right -->
+      <div class="hidden md:block absolute -bottom-10 right-2 w-32 bg-white p-2 rounded-lg shadow-md rotate-6 border border-slate-200/70">
+        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80" alt="Autoestima" class="w-full h-24 object-cover rounded">
+      </div>
+
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="font-serif-display text-3xl sm:text-4xl text-[#0e1618] leading-tight mb-4">
+          Se você está lendo isso, essa vontade não nasceu hoje.
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-7">
+          Talvez você já tenha pesquisado sobre o procedimento, observado cada detalhe no espelho e adiado a decisão por insegurança ou falta de orientação clara.
+        </p>
+
+        <!-- Pills -->
+        <div class="flex flex-wrap justify-center gap-2.5 mb-7">
+          <span class="bg-white border border-slate-200 text-slate-700 text-[11px] px-3.5 py-1.5 rounded-full shadow-xs">
+            Medo de resultados artificiais
+          </span>
+          <span class="bg-white border border-slate-200 text-slate-700 text-[11px] px-3.5 py-1.5 rounded-full shadow-xs">
+            Dúvidas sobre o pós-operatório
+          </span>
+          <span class="bg-white border border-slate-200 text-slate-700 text-[11px] px-3.5 py-1.5 rounded-full shadow-xs">
+            Insegurança na escolha do médico
+          </span>
+        </div>
+
+        <p class="text-xs text-slate-500 leading-relaxed max-w-lg mx-auto">
+          Dar o primeiro passo não significa marcar uma cirurgia imediatamente — significa ter uma conversa franca e técnica para entender o que é seguro e ideal para você.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 3: ANTES DE QUALQUER CIRURGIA -->
+  <section id="sobre" class="relative bg-obsidian text-white py-20 overflow-hidden">
+    <div class="pointer-events-none select-none absolute -right-12 bottom-0 font-serif-display text-[320px] leading-none text-white/[0.02] italic">
+      H
+    </div>
+
+    <div class="relative max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 items-center gap-12">
+      <!-- Left Card Image -->
+      <div class="md:col-span-5 flex justify-center">
+        <div class="bg-[#1b272a] p-2.5 rounded-2xl border border-white/10 shadow-2xl">
+          <img 
+            src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" 
+            alt="Dr. Henrique" 
+            class="w-72 sm:w-80 h-80 sm:h-96 object-cover object-top rounded-xl"
+          >
+        </div>
+      </div>
+
+      <!-- Right Text -->
+      <div class="md:col-span-7">
+        <span class="text-[10px] uppercase tracking-[0.22em] text-sand block mb-2">Conduta Médica</span>
+        <h2 class="font-serif-display text-3xl sm:text-4xl leading-tight mb-4">
+          Antes de qualquer cirurgia, existe uma conversa.
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed mb-6">
+          Cada anatomia é única. Na consulta de avaliação, analisamos suas proporções, histórico clínico e expectativas reais para construir um plano cirúrgico transparente e seguro.
+        </p>
+
+        <ul class="space-y-3 text-xs text-slate-200 mb-8">
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-sand/15 text-sand flex items-center justify-center text-[10px]">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span>Avaliação presencial detalhada e sem pressa</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-sand/15 text-sand flex items-center justify-center text-[10px]">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span>Indicação ética baseada em proporcionalidade</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="w-5 h-5 rounded-full bg-sand/15 text-sand flex items-center justify-center text-[10px]">
+              <i class="fa-solid fa-check"></i>
+            </span>
+            <span>Protocolos rigorosos de segurança hospitalar</span>
+          </li>
+        </ul>
+
+        <a href="#contato" class="inline-flex items-center gap-2 bg-sand hover:bg-sand-dark text-[#0e1618] font-semibold text-xs px-5 py-3 rounded transition">
+          <span>Agendar minha conversa</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 4: O QUE O DR. HENRIQUE OPERA -->
+  <section id="procedimentos" class="bg-[#f6f6f5] pt-20 pb-16">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-slate-400 block mb-2">Especialidades</span>
+        <h2 class="font-serif-display text-3xl sm:text-4xl text-[#0e1618]">
+          O que o Dr. Henrique opera
+        </h2>
+      </div>
+
+      <!-- Featured Card: Mamoplastia / Prótese -->
+      <div class="bg-white rounded-2xl border border-slate-200/80 shadow-sm overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center">
+        <div class="md:col-span-6 p-8 sm:p-10">
+          <span class="inline-block text-[10px] font-semibold uppercase tracking-widest text-[#8f6d4f] bg-[#f7efe7] px-2.5 py-1 rounded mb-3">
+            Cirurgia das Mamas
+          </span>
+          <h3 class="font-serif-display text-2xl sm:text-3xl text-[#0e1618] mb-3">
+            Mamoplastia de Aumento &amp; Mastopexia
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-5">
+            Restauração do volume, firmeza e contorno mamário com escolha precisa do plano anatômico e perfil de implante para um colo natural e harmonioso.
+          </p>
+          <ul class="space-y-2 text-[11px] text-slate-600 mb-6">
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-circle text-[5px] text-[#8f6d4f]"></i>
+              <span>Prótese de silicone com recuperação otimizada</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-circle text-[5px] text-[#8f6d4f]"></i>
+              <span>Mastopexia com ou sem prótese para flacidez</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <i class="fa-solid fa-circle text-[5px] text-[#8f6d4f]"></i>
+              <span>Mamoplastia redutora para conforto e simetria</span>
+            </li>
+          </ul>
+          <a href="#contato" class="inline-flex items-center gap-2 bg-obsidian hover:bg-slate-800 text-white text-xs font-medium px-5 py-2.5 rounded transition">
+            <span>Saber mais sobre mamas</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <div class="md:col-span-6 h-72 md:h-full min-h-[300px] bg-slate-900 relative overflow-hidden">
+          <img 
+            src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=800&q=80" 
+            alt="Anatomia e planejamento mamário" 
+            class="w-full h-full object-cover opacity-85 mix-blend-luminosity"
+          >
+          <div class="absolute inset-0 bg-gradient-to-t from-[#0e1618]/60 via-transparent to-transparent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 5: O DR. HENRIQUE TAMBÉM REALIZA -->
+  <section class="bg-obsidian text-white py-20 rounded-br-[60px]">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-sand/70 block mb-2">Contorno Corporal</span>
+        <h2 class="font-serif-display text-3xl sm:text-4xl">
+          O Dr. Henrique também realiza
+        </h2>
+      </div>
+
+      <div class="space-y-6">
+        <!-- Row 1: Abdominoplastia -->
+        <div class="bg-obsidian-card border border-white/10 rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center">
+          <div class="md:col-span-5 h-64 md:h-72 bg-black relative">
+            <img 
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80" 
+              alt="Abdominoplastia" 
+              class="w-full h-full object-cover grayscale contrast-125 opacity-80"
+            >
+          </div>
+          <div class="md:col-span-7 p-8">
+            <h3 class="font-serif-display text-2xl sm:text-3xl text-sand mb-3">
+              Abdominoplastia
+            </h3>
+            <p class="text-xs text-slate-300 font-light leading-relaxed mb-5">
+              Remoção do excesso de pele e flacidez abdominal, associada à correção da diástase muscular para devolver firmeza e definição à cintura.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="text-[10px] bg-white/5 border border-white/10 px-3 py-1 rounded text-slate-300">Pós-gestação</span>
+              <span class="text-[10px] bg-white/5 border border-white/10 px-3 py-1 rounded text-slate-300">Correção de diástase</span>
+            </div>
+            <a href="#contato" class="inline-flex items-center gap-2 border border-sand/40 hover:bg-sand hover:text-[#0e1618] text-sand text-xs font-medium px-5 py-2.5 rounded transition">
+              <span>Agendar avaliação</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Row 2: Lipoaspiração / Contorno -->
+        <div class="bg-obsidian-card border border-white/10 rounded-2xl overflow-hidden grid grid-cols-1 md:grid-cols-12 items-center">
+          <div class="md:col-span-7 p-8 order-2 md:order-1">
+            <h3 class="font-serif-display text-2xl sm:text-3xl text-sand mb-3">
+              Lipoaspiração e Lipoescultura
+            </h3>
+            <p class="text-xs text-slate-300 font-light leading-relaxed mb-5">
+              Redução de gordura localizada resistente e remodelação das curvas corporais com foco em naturalidade, simetria e transições suaves.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-6">
+              <span class="text-[10px] bg-white/5 border border-white/10 px-3 py-1 rounded text-slate-300">Definição natural</span>
+              <span class="text-[10px] bg-white/5 border border-white/10 px-3 py-1 rounded text-slate-300">Enxertia glútea</span>
+            </div>
+            <a href="#contato" class="inline-flex items-center gap-2 border border-sand/40 hover:bg-sand hover:text-[#0e1618] text-sand text-xs font-medium px-5 py-2.5 rounded transition">
+              <span>Agendar avaliação</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+          <div class="md:col-span-5 h-64 md:h-72 bg-black relative order-1 md:order-2">
+            <img 
+              src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=80" 
+              alt="Lipoaspiração e contorno" 
+              class="w-full h-full object-cover grayscale contrast-125 opacity-80"
+            >
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-[11px] text-slate-400 mt-8">
+        * Todo procedimento cirúrgico exige avaliação médica presencial prévia e exames pré-operatórios completos.
+      </p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6: EXPERIÊNCIA E TRAJETÓRIA -->
+  <section id="diferenciais" class="bg-[#f6f6f5] py-20">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 items-center gap-12">
+      <!-- Left 2x2 Photo Grid with Center Badge -->
+      <div class="md:col-span-5 relative max-w-sm mx-auto">
+        <div class="grid grid-cols-2 gap-3">
+          <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=400&q=80" alt="Atendimento médico" class="w-full h-36 object-cover rounded-xl shadow-sm">
+          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=400&q=80" alt="Consultório" class="w-full h-36 object-cover rounded-xl shadow-sm">
+          <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=400&q=80" alt="Cirurgião" class="w-full h-36 object-cover rounded-xl shadow-sm">
+          <img src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=400&q=80" alt="Centro cirúrgico" class="w-full h-36 object-cover rounded-xl shadow-sm">
+        </div>
+        <!-- Center Monogram Circle -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <div class="w-16 h-16 rounded-full bg-obsidian border-4 border-[#f6f6f5] text-sand flex items-center justify-center shadow-lg">
+            <span class="font-serif-display text-2xl italic">H</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Bio -->
+      <div class="md:col-span-7">
+        <span class="text-[10px] uppercase tracking-[0.22em] text-slate-400 block mb-2">Trajetória &amp; Formação</span>
+        <h2 class="font-serif-display text-3xl sm:text-4xl text-[#0e1618] leading-tight mb-4">
+          15 anos dedicados à cirurgia plástica com rigor técnico e acolhimento.
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">
+          Com formação sólida e atuação reconhecida em Guarapuava e região, o Dr. Henrique alia atualização científica constante a um olhar criterioso sobre cada detalhe anatômico.
+        </p>
+        <p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-7">
+          O foco de cada cirurgia não é transformar quem você é, mas devolver proporção, leveza e confiança com segurança em todas as etapas.
+        </p>
+
+        <a href="#contato" class="inline-flex items-center gap-2 bg-obsidian hover:bg-slate-800 text-white text-xs font-medium px-6 py-3 rounded transition">
+          <span>Conhecer o atendimento</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GOLD DIVIDER BANNER -->
+  <div class="bg-sand text-[#0e1618] py-2.5 text-center text-[10px] sm:text-[11px] font-semibold uppercase tracking-[0.25em]">
+    Ética • Segurança Hospitalar • Resultados Naturais • Acompanhamento Próximo
+  </div>
+
+  <!-- SEÇÃO 7: DEPOIMENTOS + COMO FUNCIONA NA PRÁTICA -->
+  <section id="depoimentos" class="relative bg-obsidian text-white py-20 overflow-hidden">
+    <div class="pointer-events-none select-none absolute inset-x-0 top-52 text-center font-serif-display text-[220px] leading-none text-white/[0.02] italic">
+      Henrique
+    </div>
+
+    <div class="relative max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-xl mx-auto mb-12">
+        <span class="text-[10px] uppercase tracking-[0.25em] text-sand/70 block mb-2">Relatos de Pacientes</span>
+        <h2 class="font-serif-display text-3xl sm:text-4xl">
+          O que muda quando o cuidado vem antes e durante e depois
+        </h2>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-10">
+        <!-- Review 1 -->
+        <div class="bg-white text-slate-800 p-5 rounded-xl shadow">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex text-amber-400 text-[10px] gap-0.5">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <i class="fa-brands fa-google text-slate-400 text-xs"></i>
+          </div>
+          <p class="text-[11px] text-slate-600 leading-relaxed mb-4">
+            "Desde a primeira consulta senti total segurança. O Dr. Henrique explicou cada etapa com muita paciência e o resultado ficou super natural."
+          </p>
+          <span class="text-[11px] font-bold text-[#0e1618] block">Mariana S.</span>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="bg-white text-slate-800 p-5 rounded-xl shadow">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex text-amber-400 text-[10px] gap-0.5">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <i class="fa-brands fa-google text-slate-400 text-xs"></i>
+          </div>
+          <p class="text-[11px] text-slate-600 leading-relaxed mb-4">
+            "Equipe impecável e acompanhamento pós-operatório muito próximo. Faria tudo novamente sem pensar duas vezes."
+          </p>
+          <span class="text-[11px] font-bold text-[#0e1618] block">Camila R.</span>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="bg-white text-slate-800 p-5 rounded-xl shadow">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex text-amber-400 text-[10px] gap-0.5">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <i class="fa-brands fa-google text-slate-400 text-xs"></i>
+          </div>
+          <p class="text-[11px] text-slate-600 leading-relaxed mb-4">
+            "Profissional extremamente ético e cuidadoso. Respeitou exatamente o que eu buscava sem exageros."
+          </p>
+          <span class="text-[11px] font-bold text-[#0e1618] block">Fernanda L.</span>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="bg-white text-slate-800 p-5 rounded-xl shadow">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex text-amber-400 text-[10px] gap-0.5">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <i class="fa-brands fa-google text-slate-400 text-xs"></i>
+          </div>
+          <p class="text-[11px] text-slate-600 leading-relaxed mb-4">
+            "Atendimento humano do início ao fim. Tirou todas as minhas dúvidas antes da cirurgia e me passou muita tranquilidade."
+          </p>
+          <span class="text-[11px] font-bold text-[#0e1618] block">Patrícia M.</span>
+        </div>
+      </div>
+
+      <div class="text-center mb-16">
+        <a href="#contato" class="inline-flex items-center gap-2 bg-sand hover:bg-sand-dark text-[#0e1618] font-semibold text-xs px-6 py-3 rounded transition">
+          <span>Agendar minha avaliação</span>
+          <i class="fa-solid fa-arrow-right text-[10px]"></i>
+        </a>
+      </div>
+
+      <!-- COMO FUNCIONA NA PRÁTICA (WHITE BOX) -->
+      <div id="processo" class="max-w-4xl mx-auto bg-white text-slate-800 rounded-2xl p-8 sm:p-12 shadow-2xl grid grid-cols-1 md:grid-cols-12 gap-10">
+        <!-- Left Title -->
+        <div class="md:col-span-5">
+          <span class="text-[10px] uppercase tracking-[0.22em] text-slate-400 block mb-2">Jornada da Paciente</span>
+          <h3 class="font-serif-display text-3xl sm:text-4xl text-[#0e1618] leading-tight mb-4">
+            Como funciona na prática
+          </h3>
+          <p class="text-xs text-slate-600 leading-relaxed mb-6">
+            Um processo organizado passo a passo para que você se sinta acolhida e segura desde o primeiro contato.
+          </p>
+          <a href="#contato" class="inline-flex items-center gap-2 bg-obsidian hover:bg-slate-800 text-white text-xs font-medium px-5 py-3 rounded transition">
+            <span>Iniciar meu atendimento</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+
+        <!-- Right Vertical Timeline -->
+        <div class="md:col-span-7">
+          <ol class="relative border-l border-slate-300 ml-3 space-y-6">
+            <li class="pl-6 relative">
+              <span class="absolute -left-[9px] top-0.5 w-4 h-4 rounded-full bg-obsidian text-sand text-[9px] font-bold flex items-center justify-center">1</span>
+              <h4 class="text-xs font-bold text-[#0e1618]">Primeiro contato com a equipe</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Agendamento rápido e orientações iniciais para sua visita ao consultório.</p>
+            </li>
+            <li class="pl-6 relative">
+              <span class="absolute -left-[9px] top-0.5 w-4 h-4 rounded-full bg-obsidian text-sand text-[9px] font-bold flex items-center justify-center">2</span>
+              <h4 class="text-xs font-bold text-[#0e1618]">Consulta médica individualizada</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Escuta ativa, exame físico detalhado e definição técnica do procedimento.</p>
+            </li>
+            <li class="pl-6 relative">
+              <span class="absolute -left-[9px] top-0.5 w-4 h-4 rounded-full bg-obsidian text-sand text-[9px] font-bold flex items-center justify-center">3</span>
+              <h4 class="text-xs font-bold text-[#0e1618]">Exames e avaliação pré-operatória</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Check-up completo e avaliação cardiológica/anestésica para máxima segurança.</p>
+            </li>
+            <li class="pl-6 relative">
+              <span class="absolute -left-[9px] top-0.5 w-4 h-4 rounded-full bg-obsidian text-sand text-[9px] font-bold flex items-center justify-center">4</span>
+              <h4 class="text-xs font-bold text-[#0e1618]">Planejamento cirúrgico e hospitalar</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Definição de data, hospital estruturado e orientações pré-cirúrgicas.</p>
+            </li>
+            <li class="pl-6 relative">
+              <span class="absolute -left-[9px] top-0.5 w-4 h-4 rounded-full bg-obsidian text-sand text-[9px] font-bold flex items-center justify-center">5</span>
+              <h4 class="text-xs font-bold text-[#0e1618]">Realização da cirurgia</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Procedimento conduzido com equipe especializada e protocolos rigorosos.</p>
+            </li>
+            <li class="pl-6 relative">
+              <span class="absolute -left-[9px] top-0.5 w-4 h-4 rounded-full bg-obsidian text-sand text-[9px] font-bold flex items-center justify-center">6</span>
+              <h4 class="text-xs font-bold text-[#0e1618]">Acompanhamento pós-operatório</h4>
+              <p class="text-[11px] text-slate-500 mt-0.5">Retornos programados e suporte próximo até a recuperação completa.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- SEÇÃO 8: A PERGUNTA QUE NINGUÉM FAZ EM VOZ ALTA -->
+      <div class="max-w-4xl mx-auto mt-20">
+        <div class="text-center mb-10">
+          <span class="text-[10px] uppercase tracking-[0.25em] text-sand/70 block mb-2">Transparência</span>
+          <h3 class="font-serif-display text-3xl sm:text-4xl">
+            A pergunta que ninguém faz em voz alta sobre o resultado?
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white text-slate-800 p-5 rounded-xl">
+            <span class="w-6 h-6 rounded bg-obsidian text-sand text-[10px] font-bold flex items-center justify-center mb-3">01</span>
+            <h4 class="text-xs font-bold text-[#0e1618] mb-1.5">Vai parecer artificial?</h4>
+            <p class="text-[11px] text-slate-600 leading-relaxed">
+              O planejamento respeita suas medidas corporais para evitar exageros e marcas evidentes.
+            </p>
+          </div>
+          <div class="bg-white text-slate-800 p-5 rounded-xl">
+            <span class="w-6 h-6 rounded bg-obsidian text-sand text-[10px] font-bold flex items-center justify-center mb-3">02</span>
+            <h4 class="text-xs font-bold text-[#0e1618] mb-1.5">Como fica a cicatriz?</h4>
+            <p class="text-[11px] text-slate-600 leading-relaxed">
+              Incisões posicionadas estrategicamente e cuidados pós-operatórios específicos para boa cicatrização.
+            </p>
+          </div>
+          <div class="bg-white text-slate-800 p-5 rounded-xl">
+            <span class="w-6 h-6 rounded bg-obsidian text-sand text-[10px] font-bold flex items-center justify-center mb-3">03</span>
+            <h4 class="text-xs font-bold text-[#0e1618] mb-1.5">E se eu me arrepender?</h4>
+            <p class="text-[11px] text-slate-600 leading-relaxed">
+              Por isso a decisão nunca é apressada: alinhamos expectativas reais antes de qualquer agendamento.
+            </p>
+          </div>
+          <div class="bg-white text-slate-800 p-5 rounded-xl">
+            <span class="w-6 h-6 rounded bg-obsidian text-sand text-[10px] font-bold flex items-center justify-center mb-3">04</span>
+            <h4 class="text-xs font-bold text-[#0e1618] mb-1.5">Quanto tempo leva?</h4>
+            <p class="text-[11px] text-slate-600 leading-relaxed">
+              A evolução completa ocorre ao longo dos meses, com acompanhamento contínuo em cada fase.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 9: CTA BANNER SECUNDÁRIO -->
+  <section id="contato" class="relative bg-[#131d20] text-white overflow-hidden border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-6 pt-12 pb-0 grid grid-cols-1 md:grid-cols-12 items-center gap-8">
+      <!-- Left Portrait -->
+      <div class="md:col-span-5 flex justify-center md:justify-start self-end order-2 md:order-1">
+        <img 
+          src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=650&q=80" 
+          alt="Dr. Henrique" 
+          class="w-72 sm:w-80 h-80 object-cover object-top rounded-t-xl"
+        >
+      </div>
+
+      <!-- Right CTA -->
+      <div class="md:col-span-7 pb-12 md:py-16 order-1 md:order-2">
+        <h2 class="font-serif-display text-3xl sm:text-4xl leading-tight mb-4">
+          O próximo passo não é uma cirurgia — é uma conversa.
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-300 font-light leading-relaxed max-w-md mb-7">
+          Agende sua avaliação em Guarapuava para esclarecer suas dúvidas diretamente com o Dr. Henrique.
+        </p>
+        <a href="https://wa.me/5542999999999" target="_blank" rel="noopener" class="inline-flex items-center gap-2.5 bg-sand hover:bg-sand-dark text-[#0e1618] font-semibold text-xs px-6 py-3.5 rounded transition shadow-lg">
+          <i class="fa-brands fa-whatsapp text-sm"></i>
+          <span>Agendar pelo WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 10: FAQ ACCORDION -->
+  <section id="faq" class="bg-[#f6f6f5] py-20">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
+      <!-- Left Sticky Box -->
+      <div class="md:col-span-4">
+        <span class="text-[10px] uppercase tracking-[0.22em] text-slate-400 block mb-2">Dúvidas Frequentes</span>
+        <h2 class="font-serif-display text-3xl text-[#0e1618] leading-tight mb-6">
+          As perguntas que mais fazem antes da primeira consulta
+        </h2>
+
+        <div class="bg-white p-5 rounded-xl border border-slate-200/80 shadow-xs">
+          <p class="text-xs font-semibold text-[#0e1618] mb-1">Ainda ficou com alguma dúvida?</p>
+          <p class="text-[11px] text-slate-500 mb-4">Nossa equipe está disponível para orientar você.</p>
+          <a href="#contato" class="inline-flex items-center gap-2 bg-obsidian hover:bg-slate-800 text-white text-[11px] font-medium px-4 py-2.5 rounded transition">
+            <span>Falar com a equipe</span>
+            <i class="fa-solid fa-arrow-right text-[9px]"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Accordion Items -->
+      <div class="md:col-span-8 space-y-2.5">
+        <details class="group bg-white border border-slate-200/80 rounded-lg px-5 py-3.5" open>
+          <summary class="flex items-center justify-between cursor-pointer text-xs font-semibold text-[#0e1618] list-none">
+            <span>Onde o Dr. Henrique atende?</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Os atendimentos presenciais são realizados em consultório estruturado em Guarapuava – PR, e as cirurgias ocorrem exclusivamente em hospitais credenciados com suporte completo.
+          </p>
+        </details>
+
+        <details class="group bg-white border border-slate-200/80 rounded-lg px-5 py-3.5">
+          <summary class="flex items-center justify-between cursor-pointer text-xs font-semibold text-[#0e1618] list-none">
+            <span>Como funciona a primeira consulta de avaliação?</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Na consulta, conversamos sobre seus objetivos, realizamos a avaliação clínica e anatômica e explicamos todas as possibilidades técnicas, riscos, preparo e recuperação.
+          </p>
+        </details>
+
+        <details class="group bg-white border border-slate-200/80 rounded-lg px-5 py-3.5">
+          <summary class="flex items-center justify-between cursor-pointer text-xs font-semibold text-[#0e1618] list-none">
+            <span>É possível saber o valor da cirurgia sem consulta?</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Seguindo as normas do Conselho Federal de Medicina (CFM), valores só podem ser informados após avaliação presencial, pois dependem da técnica indicada, equipe e estrutura hospitalar.
+          </p>
+        </details>
+
+        <details class="group bg-white border border-slate-200/80 rounded-lg px-5 py-3.5">
+          <summary class="flex items-center justify-between cursor-pointer text-xs font-semibold text-[#0e1618] list-none">
+            <span>Quais exames são necessários antes da cirurgia?</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Solicitamos exames laboratoriais de sangue, avaliação cardiológica com eletrocardiograma, exames de imagem específicos conforme o procedimento e consulta pré-anestésica.
+          </p>
+        </details>
+
+        <details class="group bg-white border border-slate-200/80 rounded-lg px-5 py-3.5">
+          <summary class="flex items-center justify-between cursor-pointer text-xs font-semibold text-[#0e1618] list-none">
+            <span>Quanto tempo leva a recuperação?</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            O tempo de repouso varia conforme o procedimento realizado. Atividades leves costumam ser retomadas entre 7 e 15 dias, enquanto exercícios físicos são liberados gradualmente.
+          </p>
+        </details>
+
+        <details class="group bg-white border border-slate-200/80 rounded-lg px-5 py-3.5">
+          <summary class="flex items-center justify-between cursor-pointer text-xs font-semibold text-[#0e1618] list-none">
+            <span>Posso associar mais de um procedimento na mesma cirurgia?</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-slate-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+            Sim, desde que o tempo cirúrgico total e suas condições clínicas estejam dentro dos parâmetros rigorosos de segurança estabelecidos pela equipe médica.
+          </p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-obsidian text-slate-400 pt-16 pb-8 border-t border-white/10">
+    <div class="max-w-5xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-white/10">
+      <!-- Brand -->
+      <div class="lg:col-span-4">
+        <div class="flex items-center gap-2.5 text-white mb-3">
+          <span class="font-serif-display text-2xl italic text-sand">H</span>
+          <div class="leading-tight">
+            <span class="text-xs font-medium tracking-wide block">Dr. Henrique</span>
+            <span class="text-[9px] uppercase tracking-[0.2em] text-slate-400 block">Cirurgia Plástica</span>
+          </div>
+        </div>
+        <p class="text-[11px] leading-relaxed mb-4">
+          CRM-PR 00000 • RQE 00000<br>
+          Membro Titular da Sociedade Brasileira de Cirurgia Plástica.
+        </p>
+        <div class="flex items-center gap-3 text-white/70 text-xs">
+          <a href="#" aria-label="Instagram" class="hover:text-sand transition"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook" class="hover:text-sand transition"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="WhatsApp" class="hover:text-sand transition"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div class="lg:col-span-2">
+        <h4 class="text-xs font-semibold text-white mb-3">Navegação</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li><a href="#sobre" class="hover:text-sand transition">Sobre</a></li>
+          <li><a href="#procedimentos" class="hover:text-sand transition">Procedimentos</a></li>
+          <li><a href="#processo" class="hover:text-sand transition">Como funciona</a></li>
+          <li><a href="#faq" class="hover:text-sand transition">Dúvidas</a></li>
+        </ul>
+      </div>
+
+      <!-- Procedimentos -->
+      <div class="lg:col-span-3">
+        <h4 class="text-xs font-semibold text-white mb-3">Procedimentos</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li><a href="#procedimentos" class="hover:text-sand transition">Mamoplastia de Aumento</a></li>
+          <li><a href="#procedimentos" class="hover:text-sand transition">Mastopexia</a></li>
+          <li><a href="#procedimentos" class="hover:text-sand transition">Abdominoplastia</a></li>
+          <li><a href="#procedimentos" class="hover:text-sand transition">Lipoaspiração</a></li>
+        </ul>
+      </div>
+
+      <!-- Contato -->
+      <div class="lg:col-span-3">
+        <h4 class="text-xs font-semibold text-white mb-3">Atendimento</h4>
+        <ul class="space-y-2 text-[11px]">
+          <li class="flex items-start gap-2">
+            <i class="fa-solid fa-location-dot text-sand mt-0.5"></i>
+            <span>Guarapuava – Paraná</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-solid fa-phone text-sand"></i>
+            <span>(42) 99999-9999</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <i class="fa-regular fa-clock text-sand"></i>
+            <span>Seg a Sex • 08h às 18h</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-5xl mx-auto px-6 pt-6 flex flex-col sm:flex-row items-center justify-between text-[10px] text-slate-500 gap-2">
+      <span>© 2026 Dr. Henrique Cirurgia Plástica. Todos os direitos reservados.</span>
+      <span>Conteúdo informativo conforme normas do CFM.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
